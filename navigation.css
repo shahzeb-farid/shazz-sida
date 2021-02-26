@@ -2,18 +2,53 @@ ul{
     list-style-type: none;
     margin:0 ;
     padding: 0;
-    overflow: hidden;
-    background-color: olive;
-}
-li{
-    float: left;
+    width: 200px;
+    background-color: darkslategray;
+    border: 1px solid mediumblue;
 }
 li a{
     display: block;
     color:gold;
-    padding: 14px 16px;
+    padding: 8px 16px;
     text-decoration: indigo;
+}
+li{
+    text-align: center;
+    border-bottom: 1px solid mediumblue;
+}
+li:last-child{
+    border-bottom: none;
 }
 li a :hover{
     background-color: mediumblue;
+    color: mediumorchid;
 }
+ul {position: fixed; top: 0; width: 100%;}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+  ul.topnav li a.active {background-color: #4CAF50;}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
